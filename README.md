@@ -8,38 +8,44 @@
 <li> проверить работоспособность API :) </li>
 </ol>
 
-#### Коллекция в Postman ####
-https://www.getpostman.com/collections/56f20f21b08b6c1325b5
+<a href='https://www.getpostman.com/collections/56f20f21b08b6c1325b5'>Коллекция в Postman</a>
+
 
 #### Спецификация методов API ####
 
 <ol>
 <li>
-    **GET** /catalogs <br>
+    <b>GET</b> /catalogs <br>
     Response: <br>
-    [
-      {"id": <number>, "title": <string>, "depth": <number>},
-      {...},
-      {...}
+    <code>
+    [<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;{"id": int, "title": string, "depth": int},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;{...},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;{...}<br>
     ]
+    </code>
 </li>
 <li>
-    **POST** /catalogs <br>
+    <b>POST</b> /catalogs <br>
     Request body (Raw JSON): <br>
-    `{
-        "parent_id": <int> (required),
-        "title": <string> (required)
-    }`
+    <code>
+    {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"parent_id": <int> (required),<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"title": <string> (required)<br>
+    }
+    </code>
 </li>
 <li>
-    **DELETE** /catalogs/{id} <br>
+    <b>DELETE</b> /catalogs/{id} <br>
 </li>
 <li>
-    **PATCH** /catalogs/{id} <br>
+    <b>PATCH</b> /catalogs/{id} <br>
     Request body (Raw JSON): <br>
-        `{
-            "parent_id": <int>,
-            "title": <string>
-        }`
+        <code>
+        {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"parent_id": "int",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"title": "string"<br>
+        }
+        </code>
 </li>
 </ol>
